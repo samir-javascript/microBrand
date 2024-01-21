@@ -33,21 +33,25 @@ app.use('/api/users', usersRoutes)
 app.use('/api/add-to-wishlist', wishlistRoutes)
 app.use('/api/verifyToken', verifyTokenRoutes)
 app.use('/api/orders', ordersRoutes )
-const __dirname = path.resolve()
+
 app.get('/api/config/paypal', (req,res)=> {
     res.send({clientId: process.env.PAYPAL_CLIENT_ID})
 })
+const __dirname = path.resolve()
+// Put it here
+//app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
+
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/client/build')))
-  
-    app.get('*', (req, res) =>
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    )
-  } else {
-    app.get('/', async(req,res)=> {
-        res.send('api is running succesufylly')
-    });
-  }
+  app.use(express.static(path.join(__dirname, '/client/build')))
+
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  )
+} else {
+  app.get('/', (req, res) => {
+    res.send('Api running....')
+  })
+}
 app.use(notFound)
 app.use(errorHandler)
 app.listen(PORT, ()=> console.log(`api is running port on ${PORT}`))
