@@ -47,7 +47,7 @@ const EditUser = () => {
             <h2  className='profile-title'>
                Edit user
            </h2>
-           <div className="form-container">
+           <div className=" edit-product-form">
 
           
 

@@ -255,24 +255,19 @@ const ProductDetailsPage = () => {
         </Row>
         {/* review section */}
         <Row className='review m-3'>
-          <Col md={6}>
-            <h2>Reviews</h2>
-           { isLoading && (
-              <Skeleton height={30} width={150} />
-            )}
-            { product?.reviews.length === 0 ? (
-              <Message>No reviews</Message>
-            ) : (
+          <Col md={6} >
+              <h2>Reviews</h2>
+              {product?.reviews.length === 0 && <Message>No reviews</Message>}
               <ListGroup variant='flush'>
-                {product?.reviews.map((item) => (
-                  <ListGroup.Item key={item._id}>
-                    <strong>{item.name} </strong>
-                    <Rating value={item.rating} />
-                    <p>{item.createdAt.substring(0, 10)} </p>
-                    <p>{item.comment} </p>
-                  </ListGroup.Item>
-                ))}
-               <ListGroup.Item>
+                  {product?.reviews.map(item => (
+                     <ListGroup.Item key={item._id}>
+                         <strong>{item.name} </strong>
+                         <Rating value={item.rating} />
+                         <p>{item.createdAt.substring(0,10)} </p>
+                         <p>{item.comment} </p>
+                     </ListGroup.Item>
+                  ))}
+                  <ListGroup.Item>
                      {userInfo ? (
                        <Form onSubmit={handleCreateReview}>
                           <Form.Group controlId='rating' className='my-2'>
@@ -303,9 +298,8 @@ const ProductDetailsPage = () => {
                      )}
                   </ListGroup.Item>
               </ListGroup>
-            )}
           </Col>
-        </Row>
+       </Row>
       </>
     </div>
   );

@@ -146,6 +146,7 @@ const Header = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  whiteSpace:'nowrap'
                 }}
                 type='button'
               >

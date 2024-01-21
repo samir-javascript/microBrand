@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div>
     <div  className='video-banner'>
-        <video src="/images/micro_vedio.mp4" autoPlay loop muted />
+        <video src="/images/micro_vedio.mp4" autoPlay  loop muted />
     </div>
     <div className='amazon-poster'>
         <img alt="" className="EditorialTileImage__image__fCzoQ" 

@@ -20,9 +20,22 @@ const Home = () => {
     // Display a loading skeleton using react-loading-skeleton
     return (
       <div>
-        <Skeleton height={500} count={1} 
-           style={{opacity:'0.7', borderRadius:'5px', maxWidth:'1500px', margin:"20px auto", marginInline:'20px'}}
-            className="fade-in-out-animation" /> 
+        <Skeleton
+  height={500}
+  count={1}
+  style={{
+    opacity: '0.7',
+    borderRadius: '5px',
+    maxWidth: '1500px',
+    margin: '20px auto',
+    marginInline: '20px',
+    // Media query for small devices
+    '@media (max-width: 768px)': {
+      maxWidth: '600px',
+    },
+  }}
+  className="fade-in-out-animation"
+/>
             <div style={{marginBottom:'30px'}} className='card-grid-container'>
                <SkeletonComponent  products={8} />
             </div>

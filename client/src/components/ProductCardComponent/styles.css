@@ -48,6 +48,7 @@ button {
     background: (linear, left top, left bottom, from(#f7dfa5), to(#f0c14b));
     background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
     height: 30px;
+    white-space: nowrap;
     margin-top: 10px;
     font-size: 13px;
     border-radius: 3px;
