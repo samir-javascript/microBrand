@@ -1,0 +1,15 @@
+.order-item {
+    width: 100%;
+    
+    height: 100%;
+    background-color: #fff;
+}
+.order-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.order-item-price {
+    font-weight: 700;
+    font-size: 22px;
+
+}

@@ -1,0 +1,45 @@
+.profile-title {
+    font-weight: 700;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+@media (max-width:768px) {
+    .profile-title {
+        font-size: 20px;
+    }
+}
+.tb-header {
+    white-space: nowrap!important;
+}
+.none-orders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.none-orders p {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.none-orders button {
+    margin: 0;
+}
+.verify-user-statement {
+    display: flex;
+    font-size: 20px;
+    max-width: 1500px;
+    margin: 20px auto;
+    
+    font-weight: 600;
+
+    text-transform: capitalize;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

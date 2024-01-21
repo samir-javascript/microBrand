@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+   height: 100vh;
+   overflow-x: hidden;
+   width: 100%;
+ 
+   color: #000;
+}
+.banner-border {
+  border-color: #DDD!important;
+  border-style: solid!important;
+  border-width: 0 0 1px 0!important;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/31/common/sprites/tspc-header-bkg.png);
+  height: 60px;
+  background-position-y: -13px;
+}
+.color-state {
+  color: #c45500;
+}
+
+.root {
+  --bg-navColor: #131921;
+  --cartpage-background: #FFD814;
+  --cart-page-border-color: #FCD200;
+}
+.custom-image-class img {
+  /* Set the maximum width and height for the main image */
+  max-width: 500px;
+  max-height: 500px;
+}
+/* Add these styles to your CSS */
+.Toastify__toast-body {
+  white-space: nowrap;
+  
+}
+review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.custom-thumbnail-class img {
+  /* Set the maximum width and height for thumbnails */
+  max-width: 100px;
+  max-height: 100px;
+}
+.app-container {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  background-color: #EAEDED;
+}

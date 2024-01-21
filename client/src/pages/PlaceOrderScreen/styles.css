@@ -1,0 +1,29 @@
+.place-order { 
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.place-order-titles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.place-order-titles p {
+    color: #c45500;
+    font-size: 18px;
+    font-weight: 600;
+}
+.order-summary {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.place-order-susbtotal-fixed {
+    position: sticky;
+    top: 90px;
+}
+.place-order-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+.edit-product-form {
+    .form-container {
+       width: 600px;
+        border: 1px solid red;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+       flex-direction: column;
+    
+    
+    }
+}
+@media (max-width:700px) {
+    .edit-product-form {
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,101 @@
+.card {
+    padding: 15px;
+    background-color:white;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    text-decoration: none;
+}
+.card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 250px;
+}
+.card-image img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+.product-info-name {
+    color: #0F1111;
+    font-size: 15px;
+    padding: 0;
+
+    margin: 0;
+    font-weight: 500;
+}
+.price-info {
+    font-weight: 600;
+    color: #0F1111;
+    font-size: 20px;
+}
+.out-of-stack-text {
+    font-size: 13px;
+    color:rgb(197, 0, 0);
+    font-weight: 400;
+    user-select: none;
+    text-transform: capitalize;
+}
+button {
+    width: 100%;
+    border-radius: 2px;
+    background: #f4d078;
+    background: (linear, left top, left bottom, from(#f7dfa5), to(#f0c14b));
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    height: 30px;
+    margin-top: 10px;
+    font-size: 13px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0F1111;
+}
+.header-btn   {
+   
+   
+    background: #f4d078;
+    background: (linear, left top, left bottom, from(#f7dfa5), to(#f0c14b));
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    
+   
+    font-size: 15px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0F1111;
+}
+.rmv-wishlist {
+    position: absolute;
+    top: 0 ; /* Adjusted to center vertically */
+    right: 0;  /* Adjusted to center horizontally */
+      /* Adjusted to center both horizontally and vertically */
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rmv-wishlist svg {
+    color:  rgb(255, 10, 124);
+    width: 70%;  /* Adjusted to leave some space around the SVG */
+    height: 70%;  /* Adjusted to leave some space around the SVG */
+    transform: translateX(35%);
+}

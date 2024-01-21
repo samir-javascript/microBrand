@@ -1,0 +1,26 @@
+.card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    justify-content: center;
+    place-content: center;
+    gap: 20px;
+    margin:0 15px;
+    
+}
+.pro-carousel {
+    max-width: 1500px;
+    margin: 15px auto;
+    padding-top: 40px;
+}
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0.5; /* Starting and ending opacity */
+    }
+    50% {
+      opacity: 1; /* Peak opacity in the middle of the animation */
+    }
+  }
+  
+  .fade-in-out-animation {
+    animation: fadeInOut 1.5s ease-in-out infinite; /* Adjust animation duration and timing function as needed */
+  }

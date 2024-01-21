@@ -1,0 +1,8 @@
+.orders {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.orders-container {
+   margin: 20px 30px;
+}

@@ -1,0 +1,34 @@
+.header-process {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/31/common/sprites/tspc-header-bkg.png);
+    height: 70px;
+    width: 100%;
+    background-color: #DDD;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.header-process-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.checkout-text-qty p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.checkout-text-qty span {
+    color: rgb(2, 2, 104);
+    text-decoration: none;
+}
+@media (max-width:768px) {
+    .checkout-text-qty {
+        display: none;
+    }
+}
+.header-process-icon {
+    position: absolute;
+    left: 50px;
+}

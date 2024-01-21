@@ -1,0 +1,41 @@
+.category-page {
+    max-width: 1500px;
+    margin: 0 auto;
+ }
+ .category-banner-statement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: rgb(101, 101, 235);
+    padding: 20px;
+    margin: 20px;
+ }
+
+ .category-banner-statement p {
+    color: #222012;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+ }
+ .category-banner-statement h3 {
+    color: white;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+ @media (max-width:768px) {
+      .category-banner-statement p {
+        font-size: 20px;
+      }
+      .category-banner-statement h3 {
+        font-size: 30px;
+      }
+      
+ }
