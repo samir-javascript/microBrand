@@ -33,7 +33,7 @@ app.use('/api/users', usersRoutes)
 app.use('/api/add-to-wishlist', wishlistRoutes)
 app.use('/api/verifyToken', verifyTokenRoutes)
 app.use('/api/orders', ordersRoutes )
-
+const __dirname = path.resolve()
 app.get('/api/config/paypal', (req,res)=> {
     res.send({clientId: process.env.PAYPAL_CLIENT_ID})
 })
