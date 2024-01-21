@@ -126,7 +126,10 @@ const ProductDetailsPage = () => {
   return (
     <div className='row-container'>
       <>
-     
+      <Helmet>
+                  <title>Logitech for creatots | {product?.name || ""} </title>
+                   <meta name='description' content={product?.description || ""} />
+              </Helmet> 
         <Row className='justify-content-md-center m-3'>
           <Col className='mb-3' md={5}>
             <div className='image-gallery'>
@@ -168,10 +171,7 @@ const ProductDetailsPage = () => {
                 )}
 
               </ListGroup.Item>
-              <Helmet>
-                  <title>Logitech for creatots | {product?.name} </title>
-                   <meta name='description' content={product?.description} />
-              </Helmet>
+             
               <ListGroup.Item>
                 {isLoading ? (
                   <Skeleton  style={{opacity:'0.7'}} />
