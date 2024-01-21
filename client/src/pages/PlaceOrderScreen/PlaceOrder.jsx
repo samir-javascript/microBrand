@@ -9,6 +9,7 @@ import { useCreateOrderMutation } from '../../slices/ordersApi'
 import Message from '../../components/MessageComponent/Message'
 import { useDispatch, useSelector } from 'react-redux'
 import SubTotal from '../../components/subtotalComponent/SubTotal'
+import { Helmet } from 'react-helmet-async'
 
 const PlaceOrder = () => {
   const navigate = useNavigate()
@@ -49,7 +50,10 @@ const PlaceOrder = () => {
     <div className='place-order'>
       <div className='place-order-wrapper'>
 
-      
+      <Helmet>
+        <title>Logitech | checkout</title>
+       
+    </Helmet>
          <CheckoutSteps step1 step2 step3 step4 />
          <Row>
              <Col md={{span: 8 , order: 1}}  xs={{order: 2}}>

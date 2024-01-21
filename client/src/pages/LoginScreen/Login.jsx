@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setCredentials } from '../../slices/usersSlice'
 import MobileHeader from '../../components/HeaderComponent/MobileHeader'
 import { toast } from 'react-toastify'
+import { Helmet } from 'react-helmet-async'
 const Login = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -37,6 +38,10 @@ const Login = () => {
   }
   return (
     <div className='login'>
+      <Helmet>
+        <title> Authentication</title>
+       
+    </Helmet>
      <div style={{opacity:'0' , visibility:"hidden", display:"none"}}>
       <MobileHeader  />
       </div>  

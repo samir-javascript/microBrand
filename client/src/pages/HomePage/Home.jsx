@@ -11,6 +11,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import Paginate from '../../components/PaginateComponent/Paginate'
 import Category from '../../components/categoriesComponent/Category'
 import SkeletonComponent from '../../components/SkeletonComponent'
+import { Helmet } from 'react-helmet-async'
 const Home = () => {
   const { pageNumber, keyword } = useParams()
   const { data, isLoading, isError, isLoadingProducts} = useGetProductsQuery({pageNumber, keyword})
@@ -36,6 +37,10 @@ const Home = () => {
   return (
     <>
     {!keyword && <Banner />} 
+    <Helmet>
+        <title> {keyword ? `search results for ${keyword}` : 'Logitech for Creators - Empowering Your Creative Journey'} </title>
+        <meta name='description' content='Unleash your creativity with Logitech for Creators, a dedicated line of tools and accessories designed to redefine the way content is created. Dive into a world where every detail matters, from crystal-clear audio to stunning video quality. Elevate your content creation experience with Logitech s innovative technology, crafted to meet the unique needs of creators like you. Whether you are a streamer, designer, or collaborator, Logitech for Creators is here to amplify your creative journey' />
+    </Helmet>
     <div className='pro-carousel'>
        {keyword ? (
         <h2 style={{marginInline:'20px'}} className="profile-title">

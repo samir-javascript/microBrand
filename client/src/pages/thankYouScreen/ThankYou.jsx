@@ -5,6 +5,7 @@ import { BsBagCheckFill } from 'react-icons/bs';
 
 
 import { runFireworks } from '../../utils/confetii';
+import { Helmet } from 'react-helmet-async';
 
 const ThankYou = () => {
  
@@ -15,6 +16,10 @@ const ThankYou = () => {
 
   return (
     <div className="success-wrapper">
+        <Helmet>
+        <title> Logitech | Thank you page</title>
+       
+    </Helmet>
       <div className="success">
         <p className="icon">
           <BsBagCheckFill />

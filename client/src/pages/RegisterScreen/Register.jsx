@@ -6,6 +6,7 @@ import { useDispatch , useSelector} from 'react-redux'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import MobileHeader from '../../components/HeaderComponent/MobileHeader'
+import { Helmet } from 'react-helmet-async'
 const Register = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -48,6 +49,10 @@ const Register = () => {
   }
   return (
     <div className='login'>
+       <Helmet>
+        <title> Authentication</title>
+       
+    </Helmet>
       <div style={{opacity:'0' , visibility:"hidden", display:"none"}}>
         <MobileHeader  />
       </div>  

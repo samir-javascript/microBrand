@@ -14,6 +14,7 @@ import { addToCart } from '../../slices/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Tooltip } from 'react-tooltip';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 const ProductDetailsPage = () => {
   const navigate = useNavigate();
@@ -125,6 +126,10 @@ const ProductDetailsPage = () => {
   return (
     <div className='row-container'>
       <>
+      <Helmet>
+        <title>Logitech for creatots | {product.name} </title>
+        <meta name='description' content={product.description} />
+    </Helmet>
         <Row className='justify-content-md-center m-3'>
           <Col className='mb-3' md={5}>
             <div className='image-gallery'>

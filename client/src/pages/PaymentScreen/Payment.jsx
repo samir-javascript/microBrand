@@ -6,6 +6,7 @@ import SubHeader from '../../components/SubHeaderComponent/SubHeader'
 import CheckoutSteps from '../../components/CheCkoutSteps/CheckoutSteps'
 import { Form, Col, Row, Button } from 'react-bootstrap'
 import FormContainer from '../../components/FormContainer'
+import { Helmet } from 'react-helmet-async'
 const Payment = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -29,6 +30,10 @@ const Payment = () => {
    }
   return (
     <div>
+        <Helmet>
+        <title> Logitech | Payment option</title>
+       
+    </Helmet>
     <SubHeader />
     <CheckoutSteps step1 step2 step3 />
    
